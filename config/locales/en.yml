@@ -1,0 +1,4 @@
+
+en:
+  # disable-with text for submit buttons
+  wait: "Please wait ..."
