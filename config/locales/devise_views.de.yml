@@ -1,0 +1,31 @@
+de:
+  devise:
+    sessions:
+      sign_in: Einloggen
+      sign_in_provider: Einloggen mit %{provider}
+    registrations:
+      sign_up: Registrieren
+      settings: Einstellungen
+      password_hint: lasse es leer, wenn du es nicht ändern möchtest
+      current_password_hint: wir brauchen dein aktuelles Passwort, um die Änderungen zu bestätigen
+      update: Aktualisieren
+      unhappy: Unzufrieden?
+      cancel: Account löschen
+      cancel_confirmation: Bist du dir sicher?
+    passwords:
+      forgot_password: Passwort vergessen?
+      request_instructions: E-Mail für Passwort-Reset zuschicken
+      new_password: Neues Passwort
+      password_confirmation: Neues Passwort bestätigen
+      update: Passwort ändern
+    unlocks:
+      instructions_missing: Keine E-Mail zur Account-Entsperrung erhalten?
+      request_instructions: E-Mail für Account-Entsperrung versenden
+    confirmations:
+      instructions_missing: Keine E-Mail zur Account-Aktivierung erhalten?
+      request_instructions: E-Mail für Aktivierung erneut zusenden
+
+    providers:
+      facebook: Facebook
+      google_oauth2: Google
+      twitter: Twitter

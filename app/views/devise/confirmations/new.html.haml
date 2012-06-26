@@ -1,4 +1,4 @@
-%h2 Resend confirmation instructions
+%h2= t("devise.confirmations.request_instructions")
 
 = semantic_form_for resource, :url => confirmation_path(resource_name) do |f|
   
@@ -6,6 +6,6 @@
     = f.input :email, :required => false, :input_html => {:required => true, :autofocus => true}
   
   = f.actions do
-    = f.action :submit, :label => "Resend confirmation instructions", :button_html => { :disable_with => t(:wait) }
+    = f.action :submit, :label => t("devise.confirmations.request_instructions"), :button_html => { :disable_with => t(:wait) }
 
 = render "links"

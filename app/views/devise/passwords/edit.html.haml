@@ -1,13 +1,13 @@
-%h2 Change your password
+%h2= t("devise.passwords.change")
 
 = semantic_form_for resource, :url => password_path(resource_name), :method => :put do |f|
   = f.hidden_field :reset_password_token
   
   = f.inputs do
-    = f.input :password,              :label => 'New password',         :required => false, :input_html => {:required => true, :autofocus => true}
-    = f.input :password_confirmation, :label => 'Confirm new password', :required => false, :input_html => {:required => true}
+    = f.input :password,              :label => t("devise.passwords.new_password"),          :required => false, :input_html => {:required => true, :autofocus => true}
+    = f.input :password_confirmation, :label => t("devise.passwords.password_confirmation"), :required => false, :input_html => {:required => true}
   
   = f.actions do
-    = f.action :submit, :label => "Change my password", :button_html => { :disable_with => t(:wait) }
+    = f.action :submit, :label => t("devise.passwords.change"), :button_html => { :disable_with => t(:wait) }
 
 = render "links"

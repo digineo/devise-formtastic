@@ -1,11 +1,11 @@
-%h2 Forgot your password?
+%h2= t("devise.passwords.forgot_password")
 
 = semantic_form_for resource, :url => password_path(resource_name) do |f|
   
   = f.inputs do
     = f.input :email,    :required => false, :input_html => {:required => true, :autofocus => true}
   
-  = f.actions do
-    = f.action :submit, :label => "Send me reset password instructions", :button_html => { :disable_with => t(:wait) }
+  = f.actions do 
+    = f.action :submit, :label => t("devise.passwords.request_instructions"), :button_html => { :disable_with => t(:wait) }
 
 = render "links"
